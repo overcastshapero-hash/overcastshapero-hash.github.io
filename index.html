@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="hanwuyue 的个人网站——法学学生、AI 探索者">
+  <title>hanwuyue</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <a href="/" class="nav-logo">hanwuyue</a>
+  <button class="nav-toggle" aria-label="菜单" onclick="toggleNav()">
+    <span></span><span></span><span></span>
+  </button>
+  <ul class="nav-links" id="nav-links">
+    <li><a href="#about">关于</a></li>
+    <li><a href="#projects">项目</a></li>
+    <li><a href="#writing">文章</a></li>
+    <li><a href="#contact">联系</a></li>
+  </ul>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-eyebrow">法学学生 · AI 探索者</div>
+  <h1>用工具思考，<br>用系统<em>生活</em></h1>
+  <p class="hero-desc">
+    在读法学学生，把 AI 当作认知和创作的工具。关注工作流、自动化与信息处理，把零散思考沉淀成可复用的系统。
+  </p>
+  <div class="hero-status">
+    <span class="status-dot"></span>
+    当下：备考法考 · 探索 AI Agent 工作流
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section class="section" id="about">
+  <div class="section-label">关于我</div>
+  <div class="about-grid">
+    <div class="about-text">
+      <p>我是一名法学学生，同时也是个 AI 工具的深度使用者。法学训练了我的逻辑和文字，AI 扩展了我的认知边界和行动速度。</p>
+      <p>这个网站是我的公开笔记本——记录正在研究的东西、做过的工具、写下的思考。不追求完整，只求真实。</p>
+      <p>我相信清晰的思维比花哨的系统更重要，但好的工具确实能让人走得更快、更稳。</p>
+    </div>
+    <div class="about-aside">
+      <div class="aside-block">
+        <div class="aside-title">正在关注</div>
+        <ul class="aside-items">
+          <li>AI Agent 架构与工作流</li>
+          <li>法学知识的结构化整理</li>
+          <li>个人知识管理（Obsidian）</li>
+          <li>内容生产与自动化</li>
+        </ul>
+      </div>
+      <div class="aside-block">
+        <div class="aside-title">常用工具</div>
+        <ul class="aside-items">
+          <li>Claude Code</li>
+          <li>Obsidian</li>
+          <li>Python / Shell</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section class="section" id="projects">
+  <div class="section-label">项目</div>
+  <div class="projects-grid">
+
+    <div class="project-card">
+      <span class="project-tag">AI 工具</span>
+      <h3>Graphify</h3>
+      <p>把任意输入（代码、文档、论文、图片）转换为知识图谱，生成带聚类社区的交互式 HTML 可视化。</p>
+      <a href="https://github.com/hanwuyue/graphify" class="project-link" target="_blank" rel="noopener">查看项目</a>
+    </div>
+
+    <div class="project-card">
+      <span class="project-tag">工作流</span>
+      <h3>AI 法学辅助系统</h3>
+      <p>用 Claude 辅助法考复习：结构化梳理知识点、区分易混概念、生成可存档的 Obsidian 卡片。</p>
+      <a href="#" class="project-link">查看项目</a>
+    </div>
+
+    <div class="project-card">
+      <span class="project-tag">开发工具</span>
+      <h3>Agent Client Protocol</h3>
+      <p>探索 AI Agent 之间的通信协议与客户端设计，研究 adk-python 在本地工作流中的应用。</p>
+      <a href="https://github.com/hanwuyue/agent-client-protocol" class="project-link" target="_blank" rel="noopener">查看项目</a>
+    </div>
+
+    <div class="project-card">
+      <span class="project-tag">效率</span>
+      <h3>Claude Code 工作流配置</h3>
+      <p>基于 cmux + Claude Code 的开发环境配置，实现 AI 辅助编程与知识沉淀的无缝整合。</p>
+      <a href="#" class="project-link">查看项目</a>
+    </div>
+
+  </div>
+</section>
+
+<!-- WRITING -->
+<section class="section" id="writing">
+  <div class="section-label">文章</div>
+  <ul>
+    <li class="writing-item">
+      <span class="writing-date">2026.04</span>
+      <a href="blog/why-law-students-need-ai.html" class="writing-title">为什么法学生更应该学 AI</a>
+      <span class="writing-tag">思考</span>
+    </li>
+    <li class="writing-item">
+      <span class="writing-date">2026.03</span>
+      <a href="blog/knowledge-system-v2.html" class="writing-title">我的知识管理系统 v2：Obsidian + Claude</a>
+      <span class="writing-tag">工作流</span>
+    </li>
+    <li class="writing-item">
+      <span class="writing-date">2026.03</span>
+      <a href="blog/graphify-law-textbook.html" class="writing-title">用知识图谱看懂一本法学教材</a>
+      <span class="writing-tag">工具</span>
+    </li>
+    <li class="writing-item">
+      <span class="writing-date">2026.02</span>
+      <a href="blog/agent-era-workflow.html" class="writing-title">Agent 时代的个人工作流应该是什么样的</a>
+      <span class="writing-tag">思考</span>
+    </li>
+  </ul>
+</section>
+
+<!-- FOOTER -->
+<footer id="contact">
+  <span class="footer-note">© 2026 hanwuyue</span>
+  <ul class="footer-links">
+    <li><a href="https://github.com/hanwuyue" target="_blank" rel="noopener">GitHub</a></li>
+    <li><a href="#" target="_blank" rel="noopener">Twitter / X</a></li>
+    <li><a href="mailto:your@email.com">邮件</a></li>
+  </ul>
+</footer>
+
+<script>
+  function toggleNav() {
+    document.getElementById('nav-links').classList.toggle('open');
+  }
+  document.querySelectorAll('.nav-links a').forEach(function(link) {
+    link.addEventListener('click', function() {
+      document.getElementById('nav-links').classList.remove('open');
+    });
+  });
+</script>
+
+</body>
+</html>

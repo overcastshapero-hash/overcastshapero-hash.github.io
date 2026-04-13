@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="hanwuyue 的文章">
+  <title>文章 — hanwuyue</title>
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+<nav>
+  <a href="/" class="nav-logo">hanwuyue</a>
+  <button class="nav-toggle" aria-label="菜单" onclick="toggleNav()">
+    <span></span><span></span><span></span>
+  </button>
+  <ul class="nav-links" id="nav-links">
+    <li><a href="/#about">关于</a></li>
+    <li><a href="/#projects">项目</a></li>
+    <li><a href="/blog/">文章</a></li>
+    <li><a href="/#contact">联系</a></li>
+  </ul>
+</nav>
+
+<div class="page-header">
+  <h1>文章</h1>
+  <p>思考、工具、工作流</p>
+</div>
+
+<section class="section" style="border-bottom: none;">
+  <ul>
+    <li class="writing-item">
+      <span class="writing-date">2026.04</span>
+      <a href="why-law-students-need-ai.html" class="writing-title">为什么法学生更应该学 AI</a>
+      <span class="writing-tag">思考</span>
+    </li>
+    <li class="writing-item">
+      <span class="writing-date">2026.03</span>
+      <a href="knowledge-system-v2.html" class="writing-title">我的知识管理系统 v2：Obsidian + Claude</a>
+      <span class="writing-tag">工作流</span>
+    </li>
+    <li class="writing-item">
+      <span class="writing-date">2026.03</span>
+      <a href="graphify-law-textbook.html" class="writing-title">用知识图谱看懂一本法学教材</a>
+      <span class="writing-tag">工具</span>
+    </li>
+    <li class="writing-item">
+      <span class="writing-date">2026.02</span>
+      <a href="agent-era-workflow.html" class="writing-title">Agent 时代的个人工作流应该是什么样的</a>
+      <span class="writing-tag">思考</span>
+    </li>
+  </ul>
+</section>
+
+<footer>
+  <span class="footer-note">© 2026 hanwuyue</span>
+  <ul class="footer-links">
+    <li><a href="https://github.com/hanwuyue" target="_blank" rel="noopener">GitHub</a></li>
+    <li><a href="#" target="_blank" rel="noopener">Twitter / X</a></li>
+    <li><a href="mailto:your@email.com">邮件</a></li>
+  </ul>
+</footer>
+
+<script>
+  function toggleNav() {
+    document.getElementById('nav-links').classList.toggle('open');
+  }
+</script>
+</body>
+</html>
