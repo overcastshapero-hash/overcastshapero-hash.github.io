@@ -3,61 +3,69 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="hanwuyue 的文章">
-  <title>文章 — hanwuyue</title>
+  <meta name="description" content="吴越的文章列表，写 AI、法学学习、行动与工作流。">
+  <title>文章｜吴越</title>
   <link rel="stylesheet" href="../style.css">
 </head>
 <body>
-
 <nav>
-  <a href="/" class="nav-logo">hanwuyue</a>
+  <a href="../" class="nav-logo">hanwuyue</a>
   <button class="nav-toggle" aria-label="菜单" onclick="toggleNav()">
     <span></span><span></span><span></span>
   </button>
   <ul class="nav-links" id="nav-links">
-    <li><a href="/#about">关于</a></li>
-    <li><a href="/#projects">项目</a></li>
-    <li><a href="/blog/">文章</a></li>
-    <li><a href="/#contact">联系</a></li>
+    <li><a href="../#about">关于</a></li>
+    <li><a href="../#projects">项目</a></li>
+    <li><a href="./">文章</a></li>
+    <li><a href="../#contact">联系</a></li>
   </ul>
 </nav>
 
-<div class="page-header">
+<header class="page-header">
   <h1>文章</h1>
-  <p>思考、工具、工作流</p>
-</div>
+  <p>这里放我真正想留下来的东西，法学学习、AI 工作流、行动与自我纠偏。</p>
+  <div class="page-header-actions">
+    <a class="cta-link secondary" href="../">回到首页</a>
+  </div>
+</header>
 
 <section class="section" style="border-bottom: none;">
-  <ul>
-    <li class="writing-item">
+  <div class="writing-list">
+    <article class="writing-item">
       <span class="writing-date">2026.04</span>
-      <a href="why-law-students-need-ai.html" class="writing-title">为什么法学生更应该学 AI</a>
+      <div class="writing-main">
+        <a href="not-starting-before-start.html" class="writing-title">你不是不努力，你只是一直卡在开始之前</a>
+        <p class="writing-desc">关于系统、整理、准备、拖延和结果物。写给总在开始前徘徊的人。</p>
+      </div>
+      <span class="writing-tag">行动</span>
+    </article>
+
+    <article class="writing-item">
+      <span class="writing-date">2026.04</span>
+      <div class="writing-main">
+        <a href="why-law-students-need-ai.html" class="writing-title">为什么法学生更应该学 AI</a>
+        <p class="writing-desc">法学生为什么天然适合用好 LLM，以及真正的门槛其实不在技术。</p>
+      </div>
       <span class="writing-tag">思考</span>
-    </li>
-    <li class="writing-item">
-      <span class="writing-date">2026.03</span>
-      <a href="knowledge-system-v2.html" class="writing-title">我的知识管理系统 v2：Obsidian + Claude</a>
-      <span class="writing-tag">工作流</span>
-    </li>
-    <li class="writing-item">
-      <span class="writing-date">2026.03</span>
-      <a href="graphify-law-textbook.html" class="writing-title">用知识图谱看懂一本法学教材</a>
-      <span class="writing-tag">工具</span>
-    </li>
-    <li class="writing-item">
-      <span class="writing-date">2026.02</span>
-      <a href="agent-era-workflow.html" class="writing-title">Agent 时代的个人工作流应该是什么样的</a>
-      <span class="writing-tag">思考</span>
-    </li>
-  </ul>
+    </article>
+
+    <article class="writing-item">
+      <span class="writing-date">2026.04</span>
+      <div class="writing-main">
+        <a href="current-course-minimum-basics.html" class="writing-title">我现在更相信，学习应该从当前课程倒推补基础</a>
+        <p class="writing-desc">比完整规划更重要的，是先把当前课程最小学习单元学明白、复述出来。</p>
+      </div>
+      <span class="writing-tag">学习</span>
+    </article>
+  </div>
 </section>
 
 <footer>
-  <span class="footer-note">© 2026 hanwuyue</span>
+  <span class="footer-note">© 2026 吴越 · 先写真实的，再慢慢写大的。</span>
   <ul class="footer-links">
-    <li><a href="https://github.com/hanwuyue" target="_blank" rel="noopener">GitHub</a></li>
-    <li><a href="#" target="_blank" rel="noopener">Twitter / X</a></li>
-    <li><a href="mailto:your@email.com">邮件</a></li>
+    <li><a href="https://github.com/overcastshapero-hash" target="_blank" rel="noopener">GitHub</a></li>
+    <li><a href="../#projects">项目</a></li>
+    <li><a href="../#contact">联系</a></li>
   </ul>
 </footer>
 
@@ -65,6 +73,11 @@
   function toggleNav() {
     document.getElementById('nav-links').classList.toggle('open');
   }
+  document.querySelectorAll('.nav-links a').forEach(function(link) {
+    link.addEventListener('click', function() {
+      document.getElementById('nav-links').classList.remove('open');
+    });
+  });
 </script>
 </body>
 </html>

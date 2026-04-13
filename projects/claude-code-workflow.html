@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Claude Code 工作流配置项目页。把 cc 放进真实开发和整理动作里。">
+  <title>Claude Code 工作流配置｜吴越</title>
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<nav>
+  <a href="../" class="nav-logo">hanwuyue</a>
+  <button class="nav-toggle" aria-label="菜单" onclick="toggleNav()">
+    <span></span><span></span><span></span>
+  </button>
+  <ul class="nav-links" id="nav-links">
+    <li><a href="../#about">关于</a></li>
+    <li><a href="../#projects">项目</a></li>
+    <li><a href="../blog/">文章</a></li>
+    <li><a href="../#contact">联系</a></li>
+  </ul>
+</nav>
+
+<main class="detail-shell">
+  <div class="detail-grid">
+    <section class="detail-main">
+      <div class="detail-card">
+        <div class="card-kicker">Project</div>
+        <h1>Claude Code 工作流配置</h1>
+        <p class="detail-subtitle">我以后说 cc，默认就是 Claude Code。这个项目页记录的，不是它能做什么，而是我怎么让它真的进入我的开发、整理和写作动作里。</p>
+      </div>
+
+      <div class="detail-card detail-body">
+        <div class="detail-section-title">为什么值得单独写</div>
+        <p>因为很多工具介绍都停在能力列表，但真正有价值的是它怎么被用进现实任务。比如 specs 怎么写、什么时候让它先做设计、什么时候直接让它改代码、什么时候要回到我自己做判断。</p>
+        <p>对我来说，cc 最重要的价值不是代替思考，而是帮我把一个明确任务推进得更快、更稳。</p>
+      </div>
+
+      <div class="detail-card detail-body">
+        <div class="detail-section-title">现在的做法</div>
+        <ul class="detail-list">
+          <li>先写规格和边界，再让它执行</li>
+          <li>优先让它做明确、可验证的小任务</li>
+          <li>保留我自己的判断，不把输出直接当结论</li>
+        </ul>
+      </div>
+    </section>
+
+    <aside class="detail-side">
+      <div class="detail-meta-card">
+        <div class="detail-section-title">状态</div>
+        <p>持续打磨中，已经进入真实使用，后面会继续沉淀成更稳定的个人默认流程。</p>
+      </div>
+
+      <div class="detail-meta-card">
+        <div class="detail-section-title">当前关联</div>
+        <ul class="link-list">
+          <li>个人网站开发和完善</li>
+          <li>spec 驱动的实现流程</li>
+          <li>与 Obsidian、脚本、skills 的协作</li>
+        </ul>
+      </div>
+
+      <div class="detail-meta-card">
+        <div class="detail-section-title">入口</div>
+        <a class="detail-link" href="../#contact">联系我</a>
+      </div>
+    </aside>
+  </div>
+</main>
+
+<footer>
+  <span class="footer-note">© 2026 吴越 · 把能力放进动作链，比会背功能更重要。</span>
+  <ul class="footer-links">
+    <li><a href="../blog/">文章</a></li>
+    <li><a href="../#contact">联系</a></li>
+  </ul>
+</footer>
+
+<script>
+  function toggleNav() {
+    document.getElementById('nav-links').classList.toggle('open');
+  }
+  document.querySelectorAll('.nav-links a').forEach(function(link) {
+    link.addEventListener('click', function() {
+      document.getElementById('nav-links').classList.remove('open');
+    });
+  });
+</script>
+</body>
+</html>

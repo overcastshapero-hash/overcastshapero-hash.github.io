@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="AI 法学辅助系统项目页。围绕法考主线，把 AI 放进真实学习动作里。">
+  <title>AI 法学辅助系统｜吴越</title>
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<nav>
+  <a href="../" class="nav-logo">hanwuyue</a>
+  <button class="nav-toggle" aria-label="菜单" onclick="toggleNav()">
+    <span></span><span></span><span></span>
+  </button>
+  <ul class="nav-links" id="nav-links">
+    <li><a href="../#about">关于</a></li>
+    <li><a href="../#projects">项目</a></li>
+    <li><a href="../blog/">文章</a></li>
+    <li><a href="../#contact">联系</a></li>
+  </ul>
+</nav>
+
+<main class="detail-shell">
+  <div class="detail-grid">
+    <section class="detail-main">
+      <div class="detail-card">
+        <div class="card-kicker">Project</div>
+        <h1>AI 法学辅助系统</h1>
+        <p class="detail-subtitle">不是为了做一个花哨的学习系统，而是为了让法学主线更稳，把理解、复述、自测和沉淀串起来。</p>
+      </div>
+
+      <div class="detail-card detail-body">
+        <div class="detail-section-title">我的原则</div>
+        <p>法学和法考是现实主线，AI 只能做套装，不能抢主角。这个系统存在的意义，不是让我研究更多工具，而是让我更容易开始今天的最小学习单元。</p>
+        <p>所以它强调短链路，百度网盘看课和文稿，AI 帮我理解、追问、纠偏，最后把真正重要的东西记进 Obsidian。</p>
+      </div>
+
+      <div class="detail-card detail-body">
+        <div class="detail-section-title">现在怎么跑</div>
+        <ul class="detail-list">
+          <li>以当前课程倒推补最小前置基础</li>
+          <li>学完先复述，再指出混淆点，再做 3 个小检查题</li>
+          <li>NotebookLM、Obsidian、LLM 各做各自该做的事，不把系统越搭越重</li>
+        </ul>
+      </div>
+    </section>
+
+    <aside class="detail-side">
+      <div class="detail-meta-card">
+        <div class="detail-section-title">状态</div>
+        <p>进行中，核心学习闭环已成形，后面会继续压缩成更稳定的日常动作。</p>
+      </div>
+
+      <div class="detail-meta-card">
+        <div class="detail-section-title">最重要的纠偏</div>
+        <ul class="link-list">
+          <li>不要把研究工具当成学习成果</li>
+          <li>不要只看资料不复述</li>
+          <li>不要让系统升级替代真正开始</li>
+        </ul>
+      </div>
+
+      <div class="detail-meta-card">
+        <div class="detail-section-title">入口</div>
+        <a class="detail-link" href="../blog/current-course-minimum-basics.html">先读这篇</a>
+      </div>
+    </aside>
+  </div>
+</main>
+
+<footer>
+  <span class="footer-note">© 2026 吴越 · 主线优先，工具只服务推进。</span>
+  <ul class="footer-links">
+    <li><a href="../blog/">文章</a></li>
+    <li><a href="../#contact">联系</a></li>
+  </ul>
+</footer>
+
+<script>
+  function toggleNav() {
+    document.getElementById('nav-links').classList.toggle('open');
+  }
+  document.querySelectorAll('.nav-links a').forEach(function(link) {
+    link.addEventListener('click', function() {
+      document.getElementById('nav-links').classList.remove('open');
+    });
+  });
+</script>
+</body>
+</html>

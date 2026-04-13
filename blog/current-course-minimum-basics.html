@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="我现在更相信，学习应该从当前课程倒推补基础。">
+  <title>我现在更相信，学习应该从当前课程倒推补基础｜吴越</title>
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<nav>
+  <a href="../" class="nav-logo">hanwuyue</a>
+  <button class="nav-toggle" aria-label="菜单" onclick="toggleNav()">
+    <span></span><span></span><span></span>
+  </button>
+  <ul class="nav-links" id="nav-links">
+    <li><a href="../#about">关于</a></li>
+    <li><a href="../#projects">项目</a></li>
+    <li><a href="./">文章</a></li>
+    <li><a href="../#contact">联系</a></li>
+  </ul>
+</nav>
+
+<header class="article-header">
+  <div class="article-meta">
+    <span class="writing-tag">学习</span>
+    <time datetime="2026-04-13">2026.04.13</time>
+  </div>
+  <h1>我现在更相信，学习应该从当前课程倒推补基础</h1>
+  <p class="article-deck">不是一上来搞完整规划，而是先围着眼前这节课、这个知识点、这组题，补最小的前置基础。</p>
+</header>
+
+<article class="article-body">
+  <p>我以前很容易犯一个错，总觉得要先把整门课的地图铺好，把整套法考路径理顺，把所有阶段都安排明白，再开始认真学。后来我越来越怀疑，这种完整感很多时候只是心理安慰。</p>
+  <p>真正有效的学习，不一定是最完整的那个，而是最能让我今天动起来的那个。所以我现在更愿意从当前课程倒推补基础，先处理眼前卡住我的那个点。</p>
+
+  <h2>为什么我不想一上来做全局重规划</h2>
+  <p>因为那太容易跑偏了。法学本来就容易把人带进定义、体系、章节、争议点的海里，如果我再给自己加一层很大的计划，最后很可能变成我一直在研究怎么学，而不是真的在学。</p>
+  <p>尤其是对零基础或刚上手的内容来说，你最需要的不是整套宇宙观，而是先知道这是什么、为什么重要、最容易和什么混，然后用一个最小例子把它钉住。</p>
+
+  <h2>我现在更相信的小路径</h2>
+  <p>先看当前课程或材料里最需要解决的地方。如果卡住了，就只补那个点所需的最小前置基础。补完立刻回到原来的内容，不要顺手再开一个更大的坑。</p>
+  <p>这个方法听起来不高级，但它有个很大的好处，它不会把学习变成无限延迟的准备工作。你今天学的是这个概念，就先把这个概念说明白。你今天做的是这组题，就先把这组题的判断路径说清楚。</p>
+
+  <h2>学完之后怎么判断是不是真的懂了</h2>
+  <p>我现在越来越不信那种看完觉得懂了的感觉。我更信三个动作，用自己的话复述，说出最容易混淆的点，再做 3 个小检查题。如果这三步做不出来，那大概率只是听着懂了。</p>
+  <p>所以我不想把 AI 用成替我总结的机器，而是更想把它当成追问、纠偏和复盘的工具。它帮我把知识点掰开、帮我发现我混淆了哪里、帮我继续追问，但最后那一下复述，还是得我自己来做。</p>
+
+  <h2>对我来说，学习不是越来越复杂，而是越来越具体</h2>
+  <p>先把今天的最小学习单元弄明白，再说下一步。先留下一页笔记、一个复述、三道检查题，再谈更大的系统。这样做不一定最爽，但更容易真的积累东西。</p>
+  <p>比起看起来很完整的路线，我现在更想要一个能让我今天晚上留下结果物的学习方法。</p>
+</article>
+
+<div class="article-nav">
+  <a href="index.html">← 返回所有文章</a>
+</div>
+
+<footer>
+  <span class="footer-note">© 2026 吴越 · 先把眼前这一小块学明白。</span>
+  <ul class="footer-links">
+    <li><a href="https://github.com/overcastshapero-hash" target="_blank" rel="noopener">GitHub</a></li>
+    <li><a href="../#projects">项目</a></li>
+    <li><a href="../#contact">联系</a></li>
+  </ul>
+</footer>
+
+<script>
+  function toggleNav() {
+    document.getElementById('nav-links').classList.toggle('open');
+  }
+  document.querySelectorAll('.nav-links a').forEach(function(link) {
+    link.addEventListener('click', function() {
+      document.getElementById('nav-links').classList.remove('open');
+    });
+  });
+</script>
+</body>
+</html>

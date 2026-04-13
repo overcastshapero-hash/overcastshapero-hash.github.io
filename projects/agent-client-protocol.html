@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Agent Client Protocol 项目页。关注 Agent、工具和环境之间的协作边界。">
+  <title>Agent Client Protocol｜吴越</title>
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<nav>
+  <a href="../" class="nav-logo">hanwuyue</a>
+  <button class="nav-toggle" aria-label="菜单" onclick="toggleNav()">
+    <span></span><span></span><span></span>
+  </button>
+  <ul class="nav-links" id="nav-links">
+    <li><a href="../#about">关于</a></li>
+    <li><a href="../#projects">项目</a></li>
+    <li><a href="../blog/">文章</a></li>
+    <li><a href="../#contact">联系</a></li>
+  </ul>
+</nav>
+
+<main class="detail-shell">
+  <div class="detail-grid">
+    <section class="detail-main">
+      <div class="detail-card">
+        <div class="card-kicker">Project</div>
+        <h1>Agent Client Protocol</h1>
+        <p class="detail-subtitle">我关心的不是概念名词，而是 Agent、工具、环境、子代理之间到底怎么协作，哪些接口会决定一条工作流能不能稳定下来。</p>
+      </div>
+
+      <div class="detail-card detail-body">
+        <div class="detail-section-title">我为什么会看这个</div>
+        <p>很多 Agent 展示都很酷，但一旦进入真实任务，就会遇到上下文切换、工具权限、状态同步、子代理协作这些问题。协议层和边界设计，决定了它是 demo，还是系统。</p>
+        <p>我更想研究的是，如何让这些能力变成长期可复用的基础设施，而不是一次性惊艳演示。</p>
+      </div>
+
+      <div class="detail-card detail-body">
+        <div class="detail-section-title">现在的关注点</div>
+        <ul class="detail-list">
+          <li>Agent 如何调用工具并保持结果可验证</li>
+          <li>子代理如何分工，而不是只堆上下文</li>
+          <li>协议层怎么服务本地工作流和真实项目</li>
+        </ul>
+      </div>
+    </section>
+
+    <aside class="detail-side">
+      <div class="detail-meta-card">
+        <div class="detail-section-title">状态</div>
+        <p>研究中。重点不是先得出最终结论，而是先做足够多的真实使用观察。</p>
+      </div>
+
+      <div class="detail-meta-card">
+        <div class="detail-section-title">我想避免的误区</div>
+        <ul class="link-list">
+          <li>只看概念，不看执行细节</li>
+          <li>只看单点能力，不看整条链路</li>
+          <li>只追新名词，不追真实可用性</li>
+        </ul>
+      </div>
+
+      <div class="detail-meta-card">
+        <div class="detail-section-title">入口</div>
+        <a class="detail-link" href="../#projects">回到项目列表</a>
+      </div>
+    </aside>
+  </div>
+</main>
+
+<footer>
+  <span class="footer-note">© 2026 吴越 · 不只问它能不能做，还问它怎么稳定地做。</span>
+  <ul class="footer-links">
+    <li><a href="../blog/">文章</a></li>
+    <li><a href="../#contact">联系</a></li>
+  </ul>
+</footer>
+
+<script>
+  function toggleNav() {
+    document.getElementById('nav-links').classList.toggle('open');
+  }
+  document.querySelectorAll('.nav-links a').forEach(function(link) {
+    link.addEventListener('click', function() {
+      document.getElementById('nav-links').classList.remove('open');
+    });
+  });
+</script>
+</body>
+</html>

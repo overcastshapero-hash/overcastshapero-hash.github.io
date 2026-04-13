@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Graphify 项目页。把任意输入转成知识图谱和可浏览的结构化输出。">
+  <title>Graphify｜吴越</title>
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<nav>
+  <a href="../" class="nav-logo">hanwuyue</a>
+  <button class="nav-toggle" aria-label="菜单" onclick="toggleNav()">
+    <span></span><span></span><span></span>
+  </button>
+  <ul class="nav-links" id="nav-links">
+    <li><a href="../#about">关于</a></li>
+    <li><a href="../#projects">项目</a></li>
+    <li><a href="../blog/">文章</a></li>
+    <li><a href="../#contact">联系</a></li>
+  </ul>
+</nav>
+
+<main class="detail-shell">
+  <div class="detail-grid">
+    <section class="detail-main">
+      <div class="detail-card">
+        <div class="card-kicker">Project</div>
+        <h1>Graphify</h1>
+        <p class="detail-subtitle">把代码、文档、网页甚至图片，转成更容易理解的知识图谱和结构化浏览结果。</p>
+      </div>
+
+      <div class="detail-card detail-body">
+        <div class="detail-section-title">为什么我关心它</div>
+        <p>很多时候不是信息太少，而是信息已经多到超出人的工作记忆。Graphify 对我最有吸引力的地方，不是炫技，而是它能把复杂材料压成结构，让我更快看出模块、关系和空白点。</p>
+        <p>这很适合我现在的工作方式。不管是看代码库、看资料、还是做研究，我都希望先看到结构，再决定深入哪里。</p>
+      </div>
+
+      <div class="detail-card detail-body">
+        <div class="detail-section-title">现在做到哪了</div>
+        <ul class="detail-list">
+          <li>已经形成从输入到图谱、报告、wiki 的完整输出链</li>
+          <li>适合做代码理解、知识整理、结构化阅读</li>
+          <li>我正在把它当成自己的研究型基础设施之一</li>
+        </ul>
+      </div>
+    </section>
+
+    <aside class="detail-side">
+      <div class="detail-meta-card">
+        <div class="detail-section-title">状态</div>
+        <p>进行中，核心能力已经可用，后续重点是更好地服务真实研究任务。</p>
+      </div>
+
+      <div class="detail-meta-card">
+        <div class="detail-section-title">我真正想要的效果</div>
+        <ul class="link-list">
+          <li>帮我更快看懂复杂系统</li>
+          <li>减少重复翻原始材料的成本</li>
+          <li>让研究这件事更像在走地图，而不是在雾里乱撞</li>
+        </ul>
+      </div>
+
+      <div class="detail-meta-card">
+        <div class="detail-section-title">入口</div>
+        <a class="detail-link" href="../#projects">回到项目列表</a>
+      </div>
+    </aside>
+  </div>
+</main>
+
+<footer>
+  <span class="footer-note">© 2026 吴越 · 先理解结构，再决定深入哪里。</span>
+  <ul class="footer-links">
+    <li><a href="../blog/">文章</a></li>
+    <li><a href="../#contact">联系</a></li>
+  </ul>
+</footer>
+
+<script>
+  function toggleNav() {
+    document.getElementById('nav-links').classList.toggle('open');
+  }
+  document.querySelectorAll('.nav-links a').forEach(function(link) {
+    link.addEventListener('click', function() {
+      document.getElementById('nav-links').classList.remove('open');
+    });
+  });
+</script>
+</body>
+</html>
