@@ -146,6 +146,18 @@
         </ul>
         <a href="./projects/claude-code-workflow.html" class="project-link">查看项目</a>
       </article>
+
+      <article class="project-card">
+        <span class="project-tag">自我系统</span>
+        <div class="project-status">已完成第一版蒸馏 · 仍在持续校准</div>
+        <h3>wuyue-perspective</h3>
+        <p>把我的备忘录、长期对话、学习规则和反复出现的内在冲突，蒸成一个更清醒、更诚实、更少自骗的自我对话 Skill。</p>
+        <ul class="project-points">
+          <li>不是人设文，而是内部纠偏系统</li>
+          <li>重点识别假进展、保护主线、压回最小动作</li>
+        </ul>
+        <a href="./projects/wuyue-perspective.html" class="project-link">查看项目</a>
+      </article>
     </div>
   </section>
 
@@ -155,6 +167,15 @@
       <p>这里优先写真实问题：怎么开始，怎么学习，怎么把工具真正放进动作链，而不是把努力都耗在准备感里。</p>
     </div>
     <div class="writing-list">
+      <article class="writing-item">
+        <span class="writing-date">2026.04</span>
+        <div class="writing-main">
+          <a href="./blog/i-built-a-skill-to-talk-to-myself.html" class="writing-title">我给自己做了一个 Skill，才发现我真正缺的不是更多方法</a>
+          <p class="writing-desc">基于备忘录与长期对话蒸出的自我文章。写的不是一个酷工具，而是我为什么总在理解和行动之间打转。</p>
+        </div>
+        <span class="writing-tag">自我</span>
+      </article>
+
       <article class="writing-item featured">
         <span class="writing-date">2026.04</span>
         <div class="writing-main">
@@ -218,16 +239,6 @@
   </ul>
 </footer>
 
-<script>
-  function toggleNav() {
-    document.getElementById('nav-links').classList.toggle('open');
-  }
-
-  document.querySelectorAll('.nav-links a').forEach(function(link) {
-    link.addEventListener('click', function() {
-      document.getElementById('nav-links').classList.remove('open');
-    });
-  });
-</script>
+<script src="script.js"></script>
 </body>
 </html>

@@ -14,16 +14,16 @@ a { color: inherit; text-decoration: none; }
 ul { list-style: none; }
 
 :root {
-  --bg: #F6F5F1;
-  --bg-card: #FFFEFB;
-  --text: #1C1C1A;
-  --muted: #67635D;
-  --muted-soft: #8B8782;
-  --accent: #2C5F2E;
+  --bg: #121210;
+  --bg-card: #1A1A18;
+  --text: #F6F5F1;
+  --muted: #A39E96;
+  --muted-soft: #67635D;
+  --accent: #4FA35A;
   --accent-mid: #3F7A43;
-  --accent-light: #ECF3EC;
-  --border: #E4E2DC;
-  --shadow: 0 10px 30px rgba(28, 28, 26, 0.06);
+  --accent-light: rgba(79, 163, 90, 0.15);
+  --border: rgba(228, 226, 220, 0.1);
+  --shadow: 0 16px 40px rgba(0, 0, 0, 0.4);
   --serif: Georgia, "Times New Roman", serif;
   --sans: -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", sans-serif;
   --mono: "SF Mono", "Fira Code", "Courier New", monospace;
@@ -965,4 +965,48 @@ footer {
   padding: 8px 10px;
   background: var(--accent);
   color: #fff;
+}
+
+/* Dynamic Micro-animations & Premium Dark Adjustments */
+.reveal {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.8s cubic-bezier(0.2, 0.8, 0.2, 1), transform 0.8s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+nav {
+  background: rgba(18, 18, 16, 0.8) !important;
+  border-bottom: 1px solid var(--border) !important;
+}
+
+.hero-status {
+  background: rgba(26, 26, 24, 0.8) !important;
+}
+
+.project-card.featured {
+  background: linear-gradient(180deg, rgba(30,30,28,0.95), rgba(26,26,24,0.96)) !important;
+}
+
+.cta-link.secondary {
+  background: rgba(26, 26, 24, 0.5) !important;
+}
+
+.cta-link.secondary:hover {
+  background: rgba(26, 26, 24, 0.9) !important;
+}
+
+.now-card, .quote-card, .contact-card, .detail-card, .contact-panel, .detail-meta-card {
+  background: rgba(26, 26, 24, 0.8) !important;
+}
+
+.hero-guide {
+  background: rgba(26, 26, 24, 0.5) !important;
+}
+
+.writing-item.featured {
+  background: rgba(26, 26, 24, 0.8) !important;
 }

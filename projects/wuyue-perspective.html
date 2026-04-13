@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="wuyue-perspective 项目页。把吴越的备忘录、对话与长期规则蒸馏成一个更清醒、更诚实的自我对话 Skill。">
+  <title>wuyue-perspective｜吴越</title>
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<nav>
+  <a href="../" class="nav-logo">hanwuyue</a>
+  <button class="nav-toggle" aria-label="菜单" onclick="toggleNav()">
+    <span></span><span></span><span></span>
+  </button>
+  <ul class="nav-links" id="nav-links">
+    <li><a href="../#about">关于</a></li>
+    <li><a href="../#projects">项目</a></li>
+    <li><a href="../blog/">文章</a></li>
+    <li><a href="../#contact">联系</a></li>
+  </ul>
+</nav>
+
+<main class="detail-shell">
+  <div class="detail-grid">
+    <section class="detail-main">
+      <div class="detail-card">
+        <div class="card-kicker">Project</div>
+        <h1>wuyue-perspective</h1>
+        <p class="detail-subtitle">把我的备忘录、长期对话、学习规则和反复出现的内在冲突，蒸馏成一个更清醒、更诚实、更少自骗的自我对话 Skill。</p>
+      </div>
+
+      <div class="detail-card detail-body">
+        <div class="detail-section-title">为什么我要做它</div>
+        <p>我一直想做的，不只是一个能描述我的人物画像，而是一个在我混乱、上头、羞耻、想逃、又想开新坑的时候，能把我拉回主线的内部视角。</p>
+        <p>它不是来无限解释我的。它更像一个更清醒的我，帮我识别我到底卡在哪，我是不是又在假进展，我今天最该留下什么结果物。</p>
+      </div>
+
+      <div class="detail-card detail-body">
+        <div class="detail-section-title">它是怎么蒸出来的</div>
+        <ul class="detail-list">
+          <li>扫描约 300 条 Apple 备忘录，筛出 126 条高价值自我材料</li>
+          <li>结合长期对话、学习规则、知识管理规则和现实主线约束</li>
+          <li>最后压成 6 个核心心智模型、10+ 条决策启发式和稳定表达 DNA</li>
+        </ul>
+      </div>
+
+      <div class="detail-card detail-body">
+        <div class="detail-section-title">这个 Skill 最重要的几件事</div>
+        <ul class="detail-list">
+          <li>先识别我是不是又把小事升级成命运问题</li>
+          <li>保护法学主线，不让 AI、系统、表达欲反客为主</li>
+          <li>揭穿假进展，把输入、规划和情绪压回结果物</li>
+          <li>最后只落到一句判断、一个卡点、一个最小动作</li>
+        </ul>
+      </div>
+    </section>
+
+    <aside class="detail-side">
+      <div class="detail-meta-card">
+        <div class="detail-section-title">状态</div>
+        <p>已完成第一版本地蒸馏。现在更像一个能持续陪我纠偏的内部操作系统，而不是单纯的人设总结。</p>
+      </div>
+
+      <div class="detail-meta-card">
+        <div class="detail-section-title">最核心的底层判断</div>
+        <ul class="link-list">
+          <li>主线必须存在，否则我会失控</li>
+          <li>成长的关键不是理解，而是转化</li>
+          <li>不能把一件事同时变成现实任务和人生审判</li>
+        </ul>
+      </div>
+
+      <div class="detail-meta-card">
+        <div class="detail-section-title">入口</div>
+        <a class="detail-link" href="../blog/i-built-a-skill-to-talk-to-myself.html">先读这篇</a>
+      </div>
+    </aside>
+  </div>
+</main>
+
+<footer>
+  <span class="footer-note">© 2026 吴越 · 更像我不重要，更能负责自己的人生更重要。</span>
+  <ul class="footer-links">
+    <li><a href="../blog/">文章</a></li>
+    <li><a href="../#contact">联系</a></li>
+  </ul>
+</footer>
+
+<script>
+  function toggleNav() {
+    document.getElementById('nav-links').classList.toggle('open');
+  }
+  document.querySelectorAll('.nav-links a').forEach(function(link) {
+    link.addEventListener('click', function() {
+      document.getElementById('nav-links').classList.remove('open');
+    });
+  });
+</script>
+</body>
+</html>
