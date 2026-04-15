@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="AI 日报项目页。用 Antigravity + Python 自动抓取全球 AI 资讯，Ollama 本地生成中文摘要，每日输出可阅读报告。">
+  <title>AI 日报｜吴越</title>
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<nav>
+  <a href="../" class="nav-logo">hanwuyue</a>
+  <button class="nav-toggle" aria-label="菜单" onclick="toggleNav()">
+    <span></span><span></span><span></span>
+  </button>
+  <ul class="nav-links" id="nav-links">
+    <li><a href="../#about">关于</a></li>
+    <li><a href="../#projects">项目</a></li>
+    <li><a href="../blog/">文章</a></li>
+    <li><a href="../#contact">联系</a></li>
+  </ul>
+</nav>
+
+<main class="detail-shell">
+  <div class="detail-grid">
+    <section class="detail-main">
+      <div class="detail-card">
+        <div class="card-kicker">Project · 自动化工具</div>
+        <h1>AI 日报</h1>
+        <p class="detail-subtitle">每天自动从全球 AI 媒体抓取资讯，本地 LLM 生成中文摘要，输出一份可直接阅读的日报。</p>
+      </div>
+
+      <div class="detail-card detail-body">
+        <div class="detail-section-title">为什么做这个</div>
+        <p>AI 领域信息量太大，每天在各个网站手动刷信息效率很低。我想要的是：每天早上起来，一份整理好的中文摘要已经在那里，而不是我再去各处拼凑。</p>
+        <p>这个项目分两条线：一条是 Antigravity 技能，直接在对话里召唤，用 web 抓取和搜索即时生成今日简报；另一条是本地 Python 工具，定期跑 RSS 抓取 + Ollama 推理，生成 Markdown 和 HTML 两种格式的离线日报。</p>
+      </div>
+
+      <div class="detail-card detail-body">
+        <div class="detail-section-title">两种实现路径</div>
+        <ul class="detail-list">
+          <li><strong>Antigravity 技能版：</strong>基于 daily-ai-news skill，调用 web reader 实时抓取 VentureBeat、TechCrunch 等主流 AI 媒体，四阶段工作流（抓取 → 过滤 → 分类 → 输出），对话即用，零本地依赖</li>
+          <li><strong>Python 本地版：</strong>RSS 源 7 个（Google AI Blog、MIT Tech Review、Hugging Face、arXiv cs.AI 等），feedparser 解析，qwen2.5:3b 本地生成中文摘要，输出 .md + .html 双格式离线报告</li>
+          <li><strong>容错设计：</strong>每个 RSS 源独立超时处理，失效就跳过，整体不崩；Ollama 未启动时摘要位置写占位提示，不影响报告生成</li>
+        </ul>
+      </div>
+
+      <div class="detail-card detail-body">
+        <div class="detail-section-title">技术组成</div>
+        <ul class="detail-list">
+          <li>Antigravity（OpenClaw）daily-ai-news skill —— 实时在线版入口</li>
+          <li>Python + feedparser + requests —— RSS 抓取与解析</li>
+          <li>Ollama qwen2.5:3b —— 本地推理，生成中文摘要，无需 API 费用</li>
+          <li>HTML 报告：玻璃态卡片设计，渐变背景，支持深色阅读</li>
+        </ul>
+      </div>
+
+      <div class="detail-card detail-body">
+        <div class="detail-section-title">我真正想解决的问题</div>
+        <p>信息过载不是信息太多，而是没有筛选层。我的目标不是收集更多，而是每天花最少时间，拿到最值得看的那 10 条。</p>
+        <p>现在这套流程跑通之后，我已经不再每天手动刷 AI 资讯了。日报生成了，我扫一遍，发现有意思的再点开原文。这个边界很重要——工具帮我拦截信息噪声，不帮我做判断。</p>
+      </div>
+    </section>
+
+    <aside class="detail-side">
+      <div class="detail-meta-card">
+        <div class="detail-section-title">状态</div>
+        <p>两条线都已跑通。Antigravity 版日常在用，Python 版作为离线备份和格式化输出。</p>
+      </div>
+
+      <div class="detail-meta-card">
+        <div class="detail-section-title">数据源</div>
+        <ul class="link-list">
+          <li>Google AI Blog</li>
+          <li>MIT Technology Review</li>
+          <li>Hugging Face Blog</li>
+          <li>VentureBeat AI</li>
+          <li>TechCrunch AI</li>
+          <li>arXiv cs.AI (最新论文)</li>
+          <li>Unite.AI / AI News</li>
+        </ul>
+      </div>
+
+      <div class="detail-meta-card">
+        <div class="detail-section-title">下一步</div>
+        <ul class="link-list">
+          <li>把日报推送接入微信（通过 OpenClaw）</li>
+          <li>筛选逻辑优化，去掉重复性内容</li>
+          <li>加权重：大模型发布 > 研究论文 > 行业动态</li>
+        </ul>
+      </div>
+
+      <div class="detail-meta-card">
+        <div class="detail-section-title">入口</div>
+        <a class="detail-link" href="../#projects">回到项目列表</a>
+      </div>
+    </aside>
+  </div>
+</main>
+
+<footer>
+  <span class="footer-note">© 2026 吴越 · 让 AI 过滤信息噪声，不替我做判断。</span>
+  <ul class="footer-links">
+    <li><a href="../blog/">文章</a></li>
+    <li><a href="../#contact">联系</a></li>
+  </ul>
+</footer>
+
+<script>
+  function toggleNav() {
+    document.getElementById('nav-links').classList.toggle('open');
+  }
+  document.querySelectorAll('.nav-links a').forEach(function(link) {
+    link.addEventListener('click', function() {
+      document.getElementById('nav-links').classList.remove('open');
+    });
+  });
+</script>
+</body>
+</html>

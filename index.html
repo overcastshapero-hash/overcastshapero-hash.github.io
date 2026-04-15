@@ -3,239 +3,197 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="吴越的个人网站。法学是当前主线，AI 是认知与行动的工具，这里放项目、文章和正在搭建的个人工作流。">
-  <title>吴越｜用工具思考，用系统生活</title>
+  <meta name="description" content="吴越的个人网站。法学生，用 AI 帮助学习、整理、追问和行动；这里放真实项目、学习系统和写给自己的文章。">
+  <title>吴越｜先把事情做成，再把系统做深</title>
   <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body class="home-page">
 <a class="skip-link" href="#main">跳到正文</a>
 <nav>
-  <a href="./" class="nav-logo">hanwuyue</a>
+  <a href="./" class="nav-logo">吴越</a>
   <button class="nav-toggle" aria-label="菜单" onclick="toggleNav()">
     <span></span><span></span><span></span>
   </button>
   <ul class="nav-links" id="nav-links">
-    <li><a href="#about">关于</a></li>
     <li><a href="#projects">项目</a></li>
     <li><a href="#writing">文章</a></li>
+    <li><a href="#about">关于</a></li>
     <li><a href="#contact">联系</a></li>
   </ul>
 </nav>
 
 <main id="main">
-  <section class="hero">
-    <div class="hero-grid">
-      <div>
-        <div class="hero-eyebrow">法学学生 · AI 探索者</div>
-        <h1>用工具思考，<br>用系统<em>生活</em></h1>
-        <p class="hero-desc">
-          法学生，AI 工作流实践者，长期写作者。这里放我正在做的项目、真正想留下来的文章，以及我怎么把零散信息压成可执行结果。
-        </p>
-        <div class="hero-status">
-          <span class="status-dot"></span>
-          当下状态，备考法考 · 搭建 AI 辅助学习与写作工作流
-        </div>
-        <div class="hero-actions">
-          <a class="cta-link primary" href="#projects">查看项目</a>
-          <a class="cta-link secondary" href="./blog/">阅读文章</a>
-        </div>
+  <section class="hero hero-apple">
+    <div class="hero-shell reveal-on-load">
+      <p class="hero-kicker">吴越 · 法学生 · AI 是工具，不是身份</p>
+      <h1>先把事情做成，<br>再把系统做深。</h1>
+      <p class="hero-lead">我是吴越。现在的主线很现实：先把法学学习和学校这条线走稳。AI 对我不是表演素材，而是学习助手、追问工具和整理接口；用来减少假学习，也用来把真正重要的东西留下来。</p>
+      <div class="hero-actions hero-cta-row">
+        <a class="cta-link primary" href="#projects">看我现在在做什么</a>
+        <a class="hero-text-link" href="./blog/">先读一篇文章</a>
       </div>
-
-      <aside class="hero-side">
-        <div class="now-card hero-guide">
-          <div class="card-kicker">Start here</div>
-          <h2>第一次来，先从这里开始</h2>
-          <ul class="now-list">
-            <li>先看项目：我怎样把 AI、学习和工作流接进真实日常</li>
-            <li>再读文章：我怎么识别假进展、假学习和开始之前的内耗</li>
-          </ul>
-        </div>
-      </aside>
+      <p class="hero-meta">当前聚焦：法学学习 / AI 辅助理解与输出 / 个人系统迭代</p>
     </div>
   </section>
 
-  <section class="section" id="about">
-    <div class="section-label">关于我</div>
-    <div class="about-grid">
-      <div class="about-text">
-        <p>我是吴越，一个正在学法的人，也是一个对 AI 有很强好奇心的人。但我不想把自己活成纯粹的工具爱好者，<span class="about-highlight">法学是地面，AI 只是让我走得更稳、更快的套装</span>。</p>
-        <p>我很在意一件事，很多人看了很多、收藏很多、搭了很多系统，最后却没有真的开始。我也反复掉进过这个坑，所以现在我做项目、写文章、整理工作流，都会逼自己回到一个问题，今天到底留下了什么结果物。</p>
-        <p>这个网站会持续记录三类东西，第一类是我正在做的 AI 项目和工作流，第二类是我怎么把 AI 放进法学学习里，第三类是我对学习、写作、成长和行动这件事的长期思考。</p>
-      </div>
-
-      <div class="about-aside">
-        <div class="aside-block">
-          <div class="aside-title">正在关注</div>
-          <ul class="aside-items">
-            <li>AI Agent 的真实可用工作流</li>
-            <li>法学知识的结构化整理与复述</li>
-            <li>个人网站、Obsidian、长期写作系统</li>
-            <li>如何减少假学习，把理解变成行动</li>
-          </ul>
-        </div>
-
-        <div class="aside-block">
-          <div class="aside-title">常用工具</div>
-          <ul class="aside-items">
-            <li>Claude Code，做实现、整理和快速验证</li>
-            <li>Obsidian，做长期沉淀和知识编译</li>
-            <li>NotebookLM，做课程资料理解与追问</li>
-            <li>Python / Shell，做自动化和小工具</li>
-          </ul>
-        </div>
-
-        <div class="aside-block">
-          <div class="aside-title">我想让这个站做到</div>
-          <ul class="aside-items">
-            <li>3 秒内让人知道我是谁</li>
-            <li>项目和文章都是真实可点、真实可读</li>
-            <li>保留表达欲，但不脱离现实主线</li>
-          </ul>
+  <section class="hero-gallery reveal-on-load">
+    <article class="hero-panel hero-panel-dark">
+      <div class="panel-copy">
+        <span class="panel-kicker">代表项目</span>
+        <h2>Graphify</h2>
+        <p>把代码、文档、网页和图片压成更容易理解的结构。我喜欢它，不是因为炫，而是因为它真的能帮人看清复杂信息。</p>
+        <div class="panel-links">
+          <a href="./projects/graphify.html">查看项目</a>
         </div>
       </div>
-    </div>
+    </article>
+    <article class="hero-panel hero-panel-light">
+      <div class="panel-copy">
+        <span class="panel-kicker">当前在做</span>
+        <h2>AI 法学辅助系统</h2>
+        <p>围绕课程、资料、追问和 Obsidian 沉淀，尽量把学习链路压短，减少“看了很多其实没学会”。</p>
+        <div class="panel-links">
+          <a href="./projects/ai-law-study-system.html">查看项目</a>
+        </div>
+      </div>
+    </article>
   </section>
 
-  <section class="section" id="projects">
-    <div class="section-label">项目</div>
-    <div class="projects-grid">
-      <article class="project-card featured">
-        <span class="project-tag">知识图谱</span>
-        <div class="project-status">代表项目 · 进行中 · 工具与展示都已跑通</div>
-        <h3>Graphify</h3>
-        <p>把代码、文档、网页、图片等输入转成可分析、可浏览的知识图谱。我喜欢它，不只是因为它酷，而是因为它把复杂信息压成了更容易理解的结构。</p>
-        <ul class="project-points">
-          <li>支持从输入到图谱再到 wiki 的完整路径</li>
-          <li>适合做技术理解、知识整理和结构化阅读</li>
-        </ul>
-        <a href="./projects/graphify.html" class="project-link">查看项目</a>
-      </article>
+  <section class="section section-quiet" id="projects">
+    <div class="section-heading reveal-on-load">
+      <span class="section-kicker">精选项目</span>
+      <h2>这些东西都和我的真实生活连着，不是为了看起来像在做事。</h2>
+      <p>我不想把网站做成漂亮的假进展陈列柜。能留下来的，应该都能回到学习、理解、表达和行动本身。</p>
+    </div>
 
-      <article class="project-card">
-        <span class="project-tag">法学学习</span>
-        <div class="project-status">进行中 · 已形成第一版学习闭环</div>
-        <h3>AI 法学辅助系统</h3>
-        <p>这不是一个花哨的学习系统，而是一个尽量短链路的法考辅助流程，从课程资料、AI 追问到 Obsidian 沉淀，目标是减少假学习。</p>
-        <ul class="project-points">
-          <li>以当前课程倒推补最小前置基础</li>
-          <li>学完先复述，再做 3 个小检查题</li>
-        </ul>
-        <a href="./projects/ai-law-study-system.html" class="project-link">查看项目</a>
-      </article>
-
-      <article class="project-card">
-        <span class="project-tag">协议研究</span>
-        <div class="project-status">研究中 · 更关心怎么用，而不是只看概念</div>
-        <h3>Agent Client Protocol</h3>
-        <p>我在关注 Agent 与工具、环境、子代理之间的协作接口。这个方向还在摸索，但它决定了很多 AI 工作流最后能不能真的稳定下来。</p>
-        <ul class="project-points">
-          <li>关注协议层，而不是单一产品的炫技</li>
-          <li>重点看本地工作流、工具调用和协作边界</li>
-        </ul>
-        <a href="./projects/agent-client-protocol.html" class="project-link">查看项目</a>
-      </article>
-
-      <article class="project-card">
-        <span class="project-tag">工作流</span>
-        <div class="project-status">持续打磨 · 已经进入真实使用</div>
+    <div class="apple-project-grid">
+      <article class="apple-project-card project-card-featured reveal-on-load">
+        <span class="project-eyebrow">工具协作</span>
         <h3>Claude Code 工作流配置</h3>
-        <p>这里记录我怎么把 Claude Code 放进自己的开发、整理和写作流程里。重点不是功能全，而是怎么让它真的融进日常动作。</p>
-        <ul class="project-points">
-          <li>默认把 cc 当成 Claude Code 来调用</li>
-          <li>结合 specs、skills 和小型自动化做迭代</li>
+        <p>围绕 Claude Code、skills、specs 与约束文档，搭一套真的能进入日常的协作方式。重点不是会多少功能，而是怎么把工具压进动作链。</p>
+        <ul>
+          <li>先定规则，再开始执行</li>
+          <li>让工具替我减负，不替我装懂</li>
         </ul>
-        <a href="./projects/claude-code-workflow.html" class="project-link">查看项目</a>
+        <a href="./projects/claude-code-workflow.html">查看项目</a>
       </article>
 
-      <article class="project-card">
-        <span class="project-tag">自我系统</span>
-        <div class="project-status">已完成第一版蒸馏 · 仍在持续校准</div>
+      <article class="apple-project-card reveal-on-load">
+        <span class="project-eyebrow">自我系统</span>
         <h3>wuyue-perspective</h3>
-        <p>把我的备忘录、长期对话、学习规则和反复出现的内在冲突，蒸成一个更清醒、更诚实、更少自骗的自我对话 Skill。</p>
-        <ul class="project-points">
-          <li>不是人设文，而是内部纠偏系统</li>
-          <li>重点识别假进展、保护主线、压回最小动作</li>
-        </ul>
-        <a href="./projects/wuyue-perspective.html" class="project-link">查看项目</a>
+        <p>把备忘录、对话和长期规则蒸成一个更清醒的自我纠偏系统，用来识别跑偏、过载和自骗。</p>
+        <a href="./projects/wuyue-perspective.html">查看项目</a>
+      </article>
+
+      <article class="apple-project-card reveal-on-load">
+        <span class="project-eyebrow">协议研究</span>
+        <h3>Agent Client Protocol</h3>
+        <p>研究 Agent、工具、环境与子代理的协作边界。比起概念好不好听，我更关心它能不能稳定落地。</p>
+        <a href="./projects/agent-client-protocol.html">查看项目</a>
+      </article>
+
+      <article class="apple-project-card reveal-on-load">
+        <span class="project-eyebrow">学习主线</span>
+        <h3>AI 法学辅助系统</h3>
+        <p>把课程资料、AI 追问和 Obsidian 沉淀连成短链路，目标不是学得很热闹，而是真的学进去。</p>
+        <a href="./projects/ai-law-study-system.html">查看项目</a>
       </article>
     </div>
   </section>
 
-  <section class="section" id="writing">
-    <div class="section-label">文章</div>
-    <div class="writing-intro">
-      <p>这里优先写真实问题：怎么开始，怎么学习，怎么把工具真正放进动作链，而不是把努力都耗在准备感里。</p>
+  <section class="section section-contrast" id="writing">
+    <div class="section-heading reveal-on-load section-heading-invert">
+      <span class="section-kicker">写作</span>
+      <h2>我更常写那些会把人从假进展里拽回来的问题。</h2>
+      <p>学习、行动、工具、自我系统——这些文章不是“输出内容”，而是我拿来对抗跑偏和自骗的文字记录。</p>
     </div>
-    <div class="writing-list">
-      <article class="writing-item">
-        <span class="writing-date">2026.04</span>
-        <div class="writing-main">
+
+    <div class="writing-stack">
+      <article class="writing-row reveal-on-load">
+        <div>
+          <span class="writing-date">2026.04</span>
           <a href="./blog/i-built-a-skill-to-talk-to-myself.html" class="writing-title">我给自己做了一个 Skill，才发现我真正缺的不是更多方法</a>
-          <p class="writing-desc">基于备忘录与长期对话蒸出的自我文章。写的不是一个酷工具，而是我为什么总在理解和行动之间打转。</p>
         </div>
-        <span class="writing-tag">自我</span>
+        <p>从备忘录和长期对话里蒸出来的不是“更高效”，而是更少自骗。</p>
       </article>
 
-      <article class="writing-item featured">
-        <span class="writing-date">2026.04</span>
-        <div class="writing-main">
+      <article class="writing-row reveal-on-load writing-row-featured">
+        <div>
+          <span class="writing-date">2026.04</span>
           <a href="./blog/not-starting-before-start.html" class="writing-title">你不是不努力，你只是一直卡在开始之前</a>
-          <p class="writing-desc">写给总在整理、收藏、搭系统，却迟迟没有真正开始的人。也是写给我自己的提醒。</p>
         </div>
-        <span class="writing-tag">行动</span>
+        <p>写给总在整理、收藏、搭系统，却迟迟没有真正开始的人。也写给我自己。</p>
       </article>
 
-      <article class="writing-item">
-        <span class="writing-date">2026.04</span>
-        <div class="writing-main">
+      <article class="writing-row reveal-on-load">
+        <div>
+          <span class="writing-date">2026.04</span>
           <a href="./blog/why-law-students-need-ai.html" class="writing-title">为什么法学生更应该学 AI</a>
-          <p class="writing-desc">不是因为跟风，而是因为法律训练天然适合和 LLM 协作，关键是别把工具当表演。</p>
         </div>
-        <span class="writing-tag">思考</span>
+        <p>不是因为跟风，而是因为法律训练天然适合和 LLM 协作，前提是别假学习。</p>
       </article>
 
-      <article class="writing-item">
-        <span class="writing-date">2026.04</span>
-        <div class="writing-main">
+      <article class="writing-row reveal-on-load">
+        <div>
+          <span class="writing-date">2026.04</span>
           <a href="./blog/current-course-minimum-basics.html" class="writing-title">我现在更相信，学习应该从当前课程倒推补基础</a>
-          <p class="writing-desc">比起一上来搞完整规划，我更想先把今天眼前的知识点真正学明白。</p>
         </div>
-        <span class="writing-tag">学习</span>
+        <p>先把眼前这门课学明白，再谈宏大规划，反而更诚实。</p>
       </article>
     </div>
-    <div class="page-header-actions writing-actions">
-      <a class="cta-link secondary" href="./blog/">查看全部文章</a>
+
+    <div class="section-actions reveal-on-load">
+      <a class="cta-link secondary on-dark" href="./blog/">查看全部文章</a>
     </div>
   </section>
 
-  <section class="section" id="contact">
-    <div class="section-label">联系</div>
-    <div class="contact-grid">
-      <div class="contact-panel">
-        <p>如果你也在做 AI 工作流、知识管理、法学学习辅助，或者只是想聊聊怎么少一点假进展，多一点真推进，欢迎来找我。</p>
-        <p><strong>现在这个站优先开放 GitHub 联系。</strong> 邮箱和其他公开渠道我会等内容稳定一点再放出来，不急着把所有入口一次性铺满。</p>
-        <p class="contact-meta">这个选择也是刻意的。先把内容做实，再慢慢补外层包装，比一开始把所有社交入口都挂上去更像我。</p>
+  <section class="section section-quiet" id="about">
+    <div class="about-split reveal-on-load">
+      <div class="about-main">
+        <span class="section-kicker">关于我</span>
+        <h2>我是吴越，法学生。现在更关心怎么把主线活稳，而不是怎么把自己包装得像个很厉害的人。</h2>
+        <p>我容易被系统、工具和整理吸走，所以我对 AI 的要求很现实：它要能帮我理解课程、追问知识点、复盘学习、整理材料，也要能在我跑偏的时候把我拉回真正该做的事。这个站记录的就是这些东西。</p>
       </div>
 
-      <div class="contact-card">
-        <div class="card-kicker">Contact</div>
-        <h2>先从这里联系我</h2>
-        <ul class="contact-list">
-          <li><a href="https://github.com/overcastshapero-hash" target="_blank" rel="noopener">GitHub / overcastshapero-hash</a></li>
-          <li><a href="./blog/">先读我的文章，再决定要不要聊</a></li>
-          <li><a href="./projects/claude-code-workflow.html">如果你对工作流更感兴趣，先看这个项目页</a></li>
-        </ul>
+      <div class="about-facts">
+        <div class="fact-item">
+          <span>主线</span>
+          <p>法学本科学习、学校成绩、法考准备；AI 是辅助能力，不是替代主线的身份。</p>
+        </div>
+        <div class="fact-item">
+          <span>主力工具</span>
+          <p>Claude Code、Obsidian、百度网盘课程资料、Ollama，以及一些真的进入日常的自动化流程。</p>
+        </div>
+        <div class="fact-item">
+          <span>工作原则</span>
+          <p>少一点假学习，少一点自我感动；让每次努力尽量留下结果物。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-contact" id="contact">
+    <div class="contact-banner reveal-on-load">
+      <div>
+        <span class="section-kicker">联系</span>
+        <h2>如果你也在认真做学习、工具或个人系统，可以来聊。</h2>
+        <p>我不想把入口铺得很满。先看内容，觉得值得，再联系。</p>
+      </div>
+      <div class="contact-actions">
+        <a class="cta-link primary" href="https://github.com/overcastshapero-hash" target="_blank" rel="noopener">GitHub</a>
+        <a class="cta-link secondary" href="./blog/">先读文章</a>
       </div>
     </div>
   </section>
 </main>
 
 <footer>
-  <span class="footer-note">© 2026 吴越 · 法学主线，AI 为工具，表达慢慢长出来。</span>
+  <span class="footer-note">© 2026 吴越 · 先把事情做成，再把系统做深。</span>
   <ul class="footer-links">
     <li><a href="https://github.com/overcastshapero-hash" target="_blank" rel="noopener">GitHub</a></li>
     <li><a href="./blog/">文章</a></li>
-    <li><a href="./projects/graphify.html">项目</a></li>
+    <li><a href="./projects/ai-daily.html">AI 日报</a></li>
+    <li><a href="./projects/graphify.html">Graphify</a></li>
   </ul>
 </footer>
 

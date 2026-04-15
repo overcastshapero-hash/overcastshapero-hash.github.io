@@ -23,11 +23,17 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }, observerOptions);
 
-  const animatedElements = document.querySelectorAll('.hero-grid > div, .hero-side, .about-text, .aside-block, .project-card, .writing-item, .contact-panel, .contact-card');
+  const animatedElements = document.querySelectorAll(
+    '.hero-grid > div, .hero-side, .about-text, .aside-block, .project-card, .writing-item, .contact-panel, .contact-card, .reveal-on-load'
+  );
+
   animatedElements.forEach((el, index) => {
-    el.classList.add('reveal');
-    // Stagger effect for items in grids
-    el.style.transitionDelay = `${(index % 4) * 0.1}s`;
+    if (!el.classList.contains('reveal-on-load')) {
+      el.classList.add('reveal');
+      el.style.transitionDelay = `${(index % 4) * 0.1}s`;
+    } else {
+      el.style.transitionDelay = `${(index % 5) * 0.06}s`;
+    }
     observer.observe(el);
   });
 });
