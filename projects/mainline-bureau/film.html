@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>主线局 · Product Film</title>
+  <link rel="stylesheet" href="film.css">
+</head>
+<body>
+  <main class="film-shell scene-0" id="film-shell">
+    <header class="film-topbar">
+      <div>
+        <span class="mini-label">Mainline Bureau</span>
+        <h1>主线局 · Product Film</h1>
+      </div>
+      <div class="timeline-pills">
+        <button class="timeline-pill active" data-scene="0">01 触发</button>
+        <button class="timeline-pill" data-scene="1">02 派工</button>
+        <button class="timeline-pill" data-scene="2">03 纠偏</button>
+        <button class="timeline-pill" data-scene="3">04 留痕</button>
+      </div>
+    </header>
+
+    <section class="film-stage">
+      <div class="gallery-layer gallery-back"></div>
+      <div class="gallery-layer gallery-mid"></div>
+
+      <div class="scene-pane pane-0 active intro-stage">
+        <div class="film-copy intro-copy">
+          <span class="eyebrow">不是聊天框</span>
+          <h2>它先判断今天真正该打哪一仗。</h2>
+          <p>不是所有问题一起解决，而是先锁定主线，把其他冲动全部降级。</p>
+        </div>
+        <div class="hero-object">
+          <div class="hero-screen hero-screen-back">
+            <span>Risk signal</span>
+            <strong>停止补整套体系</strong>
+          </div>
+          <div class="hero-screen hero-screen-main">
+            <span>Today’s battle</span>
+            <strong>民诉：只分清一个概念</strong>
+            <p>主线判断 · 派工 · 纠偏 · 留痕</p>
+          </div>
+          <div class="hero-screen hero-screen-front">
+            <span>Artifact</span>
+            <strong>Obsidian 作战卡</strong>
+          </div>
+        </div>
+      </div>
+
+      <div class="scene-pane pane-1 role-grid">
+        <article class="role-card role-card-large float-card">
+          <span>指挥官</span>
+          <strong>锁定唯一战场</strong>
+          <p>决定今天只保留一个主任务。</p>
+        </article>
+        <article class="role-card float-card delay-1">
+          <span>教练</span>
+          <strong>压缩动作</strong>
+          <p>把任务压到一小时可执行。</p>
+        </article>
+        <article class="role-card float-card delay-2">
+          <span>审计员</span>
+          <strong>识别自骗</strong>
+          <p>把“更优方案”识别成拖延。</p>
+        </article>
+        <article class="role-card float-card delay-3">
+          <span>编译器</span>
+          <strong>输出结果物</strong>
+          <p>留下可进入 Obsidian 的文本。</p>
+        </article>
+      </div>
+
+      <div class="scene-pane pane-2 audit-stage">
+        <div class="focus-card audit-card left-card">
+          <span>错误路径</span>
+          <strong>回去重学整门课</strong>
+          <p>看起来认真，实际上逃离了今天真正的任务。</p>
+        </div>
+        <div class="audit-line"></div>
+        <div class="focus-card audit-card right-card">
+          <span>主线裁决</span>
+          <strong>只分清一个概念</strong>
+          <p>先推进当前任务，再决定需不需要补更大基础。</p>
+        </div>
+      </div>
+
+      <div class="scene-pane pane-3 artifact-stage">
+        <div class="artifact-sheet">
+          <div class="artifact-header">
+            <span>Artifact</span>
+            <strong>今日作战卡</strong>
+          </div>
+          <ul>
+            <li>主线：民诉 · 既判力 vs 一事不再理</li>
+            <li>动作：复述 1 次 + 区分 1 个混淆点</li>
+            <li>纠偏：不退回整门体系</li>
+            <li>结果物：Obsidian 单页笔记</li>
+          </ul>
+        </div>
+        <div class="film-tagline">
+          <span>最终不是一段对话。</span>
+          <strong>而是一份可交付结果。</strong>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="film.js"></script>
+</body>
+</html>

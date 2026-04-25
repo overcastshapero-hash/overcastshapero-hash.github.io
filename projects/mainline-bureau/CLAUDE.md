@@ -17,9 +17,12 @@ The page must make one thing obvious fast: this is an AI digital team that turns
 - Must reflect Han Wuyue's actual edge: law-study mainline, AI as tool, Obsidian compilation, anti-fake-progress judgment.
 
 ## Structure
-- `index.html`: layout, content structure, semantic sections.
-- `styles.css`: isolated styles for this project only.
+- `index.html`: landing page for the public-facing submission.
+- `styles.css`: isolated styles for the landing page only.
 - `app.js`: deterministic interactive behavior and scenario engine.
+- `film.html`: standalone in-browser product film / motion demo.
+- `film.css`: styles for the motion demo.
+- `film.js`: lightweight timeline-driven motion and scene switching.
 
 ## UX rules
 - Show the idea in one screen.

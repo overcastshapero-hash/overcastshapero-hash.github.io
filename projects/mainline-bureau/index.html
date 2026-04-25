@@ -3,112 +3,135 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="主线局 Mainline Bureau：把 AI 数字团队压进真实行动链路。判断主线、识别假进展、派发角色、沉淀到 Obsidian。">
+  <meta name="description" content="主线局 Mainline Bureau：一个把 AI 数字团队压进真实行动链路的行动中枢。先判断主线，再派工纠偏，最后沉淀可交付结果物。">
   <title>主线局 Mainline Bureau｜吴越</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <div class="page-shell">
+  <div class="site-shell">
     <header class="topbar">
       <a class="brand" href="./">主线局</a>
       <nav class="topnav">
-        <a href="#demo">Demo</a>
-        <a href="#evidence">Why it wins</a>
-        <a href="#architecture">Architecture</a>
+        <a href="#film">演示影片</a>
+        <a href="#demo">现场试运行</a>
+        <a href="#proof">为什么能打</a>
       </nav>
     </header>
 
     <main>
-      <section class="hero">
+      <section class="hero section-block">
         <div class="hero-copy">
-          <div class="eyebrow">Hackathon Entry · Multi-Agent Action OS</div>
-          <h1>主线局</h1>
-          <p class="hero-subtitle">让 AI 团队围绕唯一主线协作，而不是陪你无限聊天。</p>
-          <p class="hero-body">主线局先判断今天真正该打哪一仗，再把任务分发给指挥官、教练、审计员和知识编译器。最后输出的不是一段“听起来很对”的对话，而是可执行动作、风险提醒和可提交的结果物。</p>
+          <p class="eyebrow">Hackathon Entry · Multi-Agent Action OS</p>
+          <h1>让 AI 团队围绕唯一主线协作。</h1>
+          <p class="hero-lead">主线局不是再造一个聊天框，而是一个真的会判断、派工、纠偏、留痕的行动中枢。它最擅长处理那种最容易被 AI 产品做坏的场景：目标很多、工具很多、看起来很忙，但真正该做的事反而被稀释。</p>
           <div class="hero-actions">
-            <a class="button primary" href="#demo">看 30 秒演示</a>
-            <a class="button ghost" href="#artifact">查看今日交付物</a>
+            <a class="button primary" href="./film.html">观看演示影片</a>
+            <a class="button secondary" href="#demo">直接试运行</a>
           </div>
           <ul class="hero-points">
-            <li>不是聊天框，而是多代理任务编排台</li>
-            <li>不是第二大脑，而是今日行动中枢</li>
-            <li>每次运行都强制留下可回看的交付物</li>
+            <li>先区分主线和假热闹</li>
+            <li>再让指挥官、教练、审计员、知识编译器分工协作</li>
+            <li>最后强制留下可回看的结果物，而不是“我聊了很多”</li>
           </ul>
         </div>
 
-        <div class="hero-panel">
-          <div class="panel-chip">Live Mission Orchestration</div>
-          <div class="ops-task-card">
-            <div class="ops-task-head">
-              <span>当前任务</span>
-              <strong id="signal-mainline">92%</strong>
+        <div class="hero-visual">
+          <div class="hero-stage-card">
+            <div class="hero-stage-label-row">
+              <span class="surface-label">Live orchestration</span>
+              <span class="surface-meta" id="hero-track">法学主线</span>
             </div>
-            <h3 id="ops-task-title">民诉：分清既判力和一事不再理</h3>
-            <p id="mission-preview-text">不是回头重学整门课，而是先把今天老师讲的这个点真正学进去。</p>
-          </div>
-
-          <div class="ops-flow" id="ops-flow">
-            <div class="flow-step active">
-              <span>01</span>
-              <div>
-                <strong>指挥官判定主线</strong>
-                <p>锁定今天唯一战场</p>
-              </div>
+            <div class="hero-stage-grid">
+              <article class="stage-tile stage-tile-main">
+                <span>当前任务</span>
+                <strong id="hero-mainline">民诉：先分清既判力和一事不再理</strong>
+                <p id="hero-state">今天不许退回去重学整门课，只打这一仗。</p>
+              </article>
+              <article class="stage-tile">
+                <span>01 指挥官</span>
+                <strong>锁定唯一战场</strong>
+                <p>把所有并行冲动降级。</p>
+              </article>
+              <article class="stage-tile">
+                <span>02 教练</span>
+                <strong>压到 60 分钟可做完</strong>
+                <p>把任务压成一个最小闭环。</p>
+              </article>
+              <article class="stage-tile">
+                <span>03 审计员</span>
+                <strong id="hero-risk">别补整套体系</strong>
+                <p>先推进，再解释。</p>
+              </article>
             </div>
-            <div class="flow-step active">
-              <span>02</span>
-              <div>
-                <strong>教练压缩动作</strong>
-                <p>把任务压到 60 分钟可完成</p>
-              </div>
+            <div class="hero-artifact-bar">
+              <span>今日交付</span>
+              <strong id="hero-artifact">作战卡 + 1 页 Obsidian 笔记</strong>
             </div>
-            <div class="flow-step warning">
-              <span>03</span>
-              <div>
-                <strong>审计员拦截跑偏</strong>
-                <p id="signal-risk">禁止补全整套体系</p>
-              </div>
-            </div>
-            <div class="flow-step success">
-              <span>04</span>
-              <div>
-                <strong>编译器输出结果物</strong>
-                <p id="signal-artifact">1 份作战卡 + 1 页笔记</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="ops-output-card">
-            <div class="ops-output-head">
-              <span>即时交付预览</span>
-              <strong id="signal-team">法学主线已部署</strong>
-            </div>
-            <pre id="ops-output-preview">- 主线：民事诉讼法
-- 动作：复述 1 次 + 区分 1 个混淆点
-- 风险：别退回去重学整门课
-- 结果物：Obsidian 单页笔记</pre>
           </div>
         </div>
       </section>
 
-      <section class="section demo-section" id="demo">
-        <div class="section-heading">
+      <section class="principles section-block section-slim">
+        <div class="principle-row">
+          <article>
+            <span>01</span>
+            <h2>不是第二大脑</h2>
+            <p>它不帮你囤积信息，它只关心今天这一仗该怎么打。</p>
+          </article>
+          <article>
+            <span>02</span>
+            <h2>不是假学习增强器</h2>
+            <p>它会优先识别自骗、过载和系统成瘾，而不是奖励忙碌感。</p>
+          </article>
+          <article>
+            <span>03</span>
+            <h2>不是只会说漂亮话</h2>
+            <p>每次运行都必须落到动作、风险提醒和结果物。</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="film-section section-block" id="film">
+        <div class="section-copy duo-copy">
           <div>
-            <div class="eyebrow">Interactive Demo</div>
-            <h2>给团队一个真实情境，它就开始工作。</h2>
+            <p class="eyebrow">Product Film</p>
+            <h2>用一段短片，让评委先看见“系统在工作”。</h2>
           </div>
-          <p>你可以直接点预设，也可以手动改。重点不是“回答得像不像 AI”，而是它有没有把复杂处境压成今天能动的动作。</p>
+          <p>我没有把“演示视频”做成说明书拼贴，而是做成了一段可独立打开的产品影片。它展示的不是概念词，而是任务如何被判断、如何被压缩、如何被纠偏、如何产出交付物。</p>
         </div>
 
-        <div class="demo-grid">
-          <aside class="control-panel">
-            <div class="preset-group">
-              <div class="control-title">一键场景</div>
-              <div class="preset-list">
-                <button class="preset active" data-preset="law">法学跟课日</button>
-                <button class="preset" data-preset="build">又想搭系统</button>
-                <button class="preset" data-preset="output">准备写输出</button>
-              </div>
+        <div class="film-frame-wrap">
+          <div class="film-browser-bar">
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="film-url">mainline-bureau / product film</span>
+          </div>
+          <iframe class="film-frame" src="./film.html" title="主线局演示影片"></iframe>
+        </div>
+
+        <div class="film-actions">
+          <a class="text-link" href="./film.html">单独打开影片</a>
+          <a class="text-link" href="#demo">跳到实时试运行</a>
+        </div>
+      </section>
+
+      <section class="demo-section section-block" id="demo">
+        <div class="section-copy duo-copy">
+          <div>
+            <p class="eyebrow">Interactive Demo</p>
+            <h2>给它一个真实处境，它会把复杂问题压成今天能做的动作。</h2>
+          </div>
+          <p>这部分不是让你“感受 AI 有多会说”，而是让你现场验证：不同处境下，它能不能稳定地做出主线判断、任务派发、自骗拦截和结果物输出。</p>
+        </div>
+
+        <div class="demo-layout">
+          <aside class="demo-controls surface-card">
+            <div class="mini-label">一键场景</div>
+            <div class="preset-list">
+              <button class="preset active" data-preset="law">法学跟课日</button>
+              <button class="preset" data-preset="build">又想搭系统</button>
+              <button class="preset" data-preset="output">准备写输出</button>
             </div>
 
             <form id="mission-form" class="mission-form">
@@ -138,144 +161,91 @@
                   <option value="准备写东西但迟迟不开头">准备写东西但迟迟不开头</option>
                 </select>
               </label>
-              <button class="button primary full-width" type="submit">启动主线局</button>
+              <button class="button primary wide" type="submit">启动主线局</button>
             </form>
           </aside>
 
-          <div class="results-panel">
-            <div class="results-head">
+          <section class="demo-output surface-card">
+            <div class="output-head">
               <div>
-                <div class="eyebrow">Team Dispatch</div>
+                <p class="mini-label">实时派工</p>
                 <h3 id="scenario-title">法学跟课日</h3>
               </div>
-              <button class="button ghost small" id="copy-artifact" type="button">复制结果物</button>
+              <button class="button tertiary small" id="copy-artifact" type="button">复制结果物</button>
             </div>
 
-            <div class="agent-grid">
-              <article class="agent-card">
-                <div class="agent-title-row">
-                  <span class="agent-tag">01 指挥官</span>
-                  <span class="agent-status">已判断</span>
-                </div>
+            <div class="dispatch-grid">
+              <article class="dispatch-card">
+                <span>01 指挥官</span>
                 <h4>主线裁决</h4>
                 <p id="judgment-output"></p>
               </article>
-
-              <article class="agent-card">
-                <div class="agent-title-row">
-                  <span class="agent-tag">02 课程教练</span>
-                  <span class="agent-status">已派工</span>
-                </div>
+              <article class="dispatch-card">
+                <span>02 教练</span>
                 <h4>今日动作</h4>
                 <ul id="actions-output" class="bullet-list"></ul>
               </article>
-
-              <article class="agent-card warning-card">
-                <div class="agent-title-row">
-                  <span class="agent-tag">03 反自骗审计</span>
-                  <span class="agent-status">已拦截</span>
-                </div>
+              <article class="dispatch-card warning-card">
+                <span>03 审计员</span>
                 <h4>最可能的跑偏</h4>
                 <p id="warning-output"></p>
               </article>
-
-              <article class="agent-card success-card">
-                <div class="agent-title-row">
-                  <span class="agent-tag">04 知识编译器</span>
-                  <span class="agent-status">已留痕</span>
-                </div>
+              <article class="dispatch-card success-card">
+                <span>04 知识编译器</span>
                 <h4>完成标准</h4>
                 <p id="artifact-check-output"></p>
               </article>
             </div>
 
-            <section class="artifact-panel" id="artifact">
+            <div class="artifact-box" id="artifact">
               <div class="artifact-head">
                 <div>
-                  <div class="eyebrow">Artifact</div>
-                  <h3>可直接进 Obsidian / 日志 / 工作流的结果物</h3>
+                  <p class="mini-label">Artifact</p>
+                  <h4>可直接沉淀到 Obsidian / 日志 / 工作流</h4>
                 </div>
-                <span class="artifact-badge">markdown-ready</span>
+                <span class="artifact-pill">markdown-ready</span>
               </div>
               <pre id="artifact-output"></pre>
-            </section>
-          </div>
+            </div>
+          </section>
         </div>
       </section>
 
-      <section class="section evidence-section" id="evidence">
-        <div class="section-heading">
+      <section class="proof-section section-block" id="proof">
+        <div class="section-copy duo-copy">
           <div>
-            <div class="eyebrow">Why This Matters</div>
-            <h2>这个作品不是概念拼贴，它解决的是一个很真实的问题。</h2>
+            <p class="eyebrow">Why it wins</p>
+            <h2>它不是概念拼贴，而是一个切中了真实痛点的 AI 团队原型。</h2>
           </div>
+          <p>最常见的 AI 产品错误，是把用户带向更精致的假进展。主线局反着来：先剥掉忙碌感，再逼出主线，再给出能留下证据的结果物。这是它真正有辨识度的地方。</p>
         </div>
-        <div class="evidence-grid">
-          <article class="evidence-card">
-            <span>问题</span>
-            <h3>大多数 AI 产品都在放大“看起来很努力”</h3>
-            <p>用户可以聊很多、收很多、整理很多，但不一定留下行动，不一定留下结果物。尤其在学习场景里，AI 很容易把人推向更精致的假学习。</p>
-          </article>
-          <article class="evidence-card">
-            <span>我的切法</span>
-            <h3>先判断主线，再动用团队</h3>
-            <p>主线局不是让一个大模型什么都做，而是把任务拆成 4 个稳定角色：判断主线、生成动作、识别自骗、编译结果。这样每一步都更可解释，也更接近日常执行。</p>
-          </article>
-          <article class="evidence-card">
-            <span>差异化</span>
-            <h3>它不是“第二大脑”，而是“行动中枢”</h3>
-            <p>第二大脑偏存储；主线局更像作战系统。它关注今天的仗、今天的陷阱、今天必须留下的证据，而不是无限膨胀的信息体系。</p>
-          </article>
-        </div>
-      </section>
 
-      <section class="section architecture-section" id="architecture">
-        <div class="section-heading">
-          <div>
-            <div class="eyebrow">Architecture</div>
-            <h2>我想把它做成什么样</h2>
-          </div>
-          <p>这次提交的是一个可打开、可交互、可验证方向的前端原型；真正的产品形态会继续向多代理协作和知识沉淀系统演进。</p>
-        </div>
-        <div class="architecture-board">
-          <div class="arch-column">
-            <span>输入层</span>
-            <ul>
-              <li>课程 / 项目 / 写作目标</li>
-              <li>可用时间与当前状态</li>
-              <li>风险信号与跑偏倾向</li>
-            </ul>
-          </div>
-          <div class="arch-arrow">→</div>
-          <div class="arch-column">
-            <span>团队层</span>
-            <ul>
-              <li>指挥官：主线判断</li>
-              <li>教练：动作压缩</li>
-              <li>审计：假进展拦截</li>
-              <li>编译器：结果物沉淀</li>
-            </ul>
-          </div>
-          <div class="arch-arrow">→</div>
-          <div class="arch-column">
-            <span>输出层</span>
-            <ul>
-              <li>今日任务序列</li>
-              <li>自骗提醒</li>
-              <li>完成标准</li>
-              <li>Obsidian / 日志文本</li>
-            </ul>
-          </div>
+        <div class="proof-grid">
+          <article class="proof-card surface-card">
+            <p class="mini-label">切得更深</p>
+            <h3>它解决的是“假进展”问题，不只是“信息整理”问题。</h3>
+            <p>大部分 AI 产品在帮助用户多做一点；主线局在帮助用户少错很多。它最先处理的不是效率，而是跑偏。</p>
+          </article>
+          <article class="proof-card surface-card">
+            <p class="mini-label">结构更稳</p>
+            <h3>不是大模型一把梭，而是四角色协同。</h3>
+            <p>指挥官判断主线，教练压缩动作，审计员拦截自骗，知识编译器沉淀交付。这让系统更可解释，也更接近日常真实执行。</p>
+          </article>
+          <article class="proof-card surface-card">
+            <p class="mini-label">更像真实产品</p>
+            <h3>它既能被点开理解，也能被真正拿去用。</h3>
+            <p>你能看影片、试运行、复制结果物。评委看到的不只是“概念”，而是一条真正能工作的行动链路。</p>
+          </article>
         </div>
       </section>
     </main>
 
-    <footer class="footer">
+    <footer class="footer section-block section-slim">
       <div>
         <strong>主线局 Mainline Bureau</strong>
         <p>AI 不是来替我表演聪明，而是来帮我把真正重要的事做成。</p>
       </div>
-      <a class="button ghost" href="../../index.html">回到主页</a>
+      <a class="text-link" href="../../index.html">返回吴越主页</a>
     </footer>
   </div>
 
